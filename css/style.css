@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin: 0; /* Elimina márgenes predeterminados */
+    max-width: 100%; /* Ajusta el ancho máximo */
+    flex-direction: column; /* Opcional: organiza los elementos en columna */
+    font-family: "Archivo", sans-serif;
+}
+
+section {
+    padding: 20px;
+}
+
+.mobile-dev {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.app-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.app-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.app-image {
+    flex: 1;
+    text-align: center;
+}
+
+.app-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tags {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .app-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .app-image {
+        order: -1; /* Mueve la imagen arriba en pantallas pequeñas */
+    }
+}
