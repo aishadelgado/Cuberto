@@ -1,10 +1,5 @@
 body {
-    display: flex;
     justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    margin: 0; /* Elimina márgenes predeterminados */
-    max-width: 100%; /* Ajusta el ancho máximo */
-    flex-direction: column; /* Opcional: organiza los elementos en columna */
     font-family: "Archivo", sans-serif;
 }
 
@@ -12,21 +7,28 @@ section {
     padding: 20px;
 }
 
-.mobile-dev {
-    background-color: #f0f0f0;
+.título {
     text-align: center;
+    color: rgb(11, 151, 134);
 }
-
-.app-section {
+.app-section-sleepiest {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    border-bottom: 1px solid #eee;
+    background-color: #f5eef5;
 }
 
 .app-content {
     flex: 1;
     padding: 20px;
+}
+
+.app-section-ulesson {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #faf5f3;
+    flex-direction: row-reverse;
 }
 
 .app-image {
@@ -54,7 +56,6 @@ section {
     gap: 10px;
     margin-top: 20px;
 }
-
 /* Estilos responsivos */
 @media (max-width: 768px) {
     .app-section {
