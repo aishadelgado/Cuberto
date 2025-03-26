@@ -1,5 +1,5 @@
 body {
-    justify-content: center; /* Centra horizontalmente */
+    justify-content: center;
     font-family: "Archivo", sans-serif;
 }
 
@@ -8,7 +8,7 @@ section {
 }
 
 .título {
-    text-align: center;
+    text-align: left;
     color: rgb(11, 151, 134);
 }
 .app-section-sleepiest {
@@ -29,6 +29,13 @@ section {
     align-items: center;
     background-color: #faf5f3;
     flex-direction: row-reverse;
+}
+
+.app-section-genesis {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f2f9f8;
 }
 
 .app-image {
